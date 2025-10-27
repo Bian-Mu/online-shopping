@@ -22,7 +22,7 @@ const App: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <Layout className='h-full'>
+    <Layout className='h-screen overflow-hidden '>
       <Sider style={{ background: colorConfig.background }} trigger={null} collapsible collapsed={collapsed}>
         <div className='text-2xl  h-[64px] leading-[64px] text-center'>
           <ShopTwoTone />
@@ -47,7 +47,7 @@ const App: React.FC = () => {
           ]}
         />
       </Sider>
-      <Layout>
+      <Layout className='h-full'>
         <Header style={{ padding: 0, background: colorConfig.background }}>
           <Button
             type="text"
@@ -60,12 +60,7 @@ const App: React.FC = () => {
             }}
           />
         </Header>
-        <Content
-          style={{
-            margin: '24px 16px',
-            padding: 24,
-          }}
-        >
+        <Content>
           <Routes>
             <Route path='/private' element={<User />}></Route>
             <Route path='/' element={<Shop />}></Route>

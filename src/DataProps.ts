@@ -3,6 +3,10 @@ export interface User {
     role: number; //0代表商家，1代表顾客
     userId: number;
     userName: string;
+    /**
+     * 发货/收货地
+     */
+    address: string;
 }
 
 
@@ -32,13 +36,12 @@ export interface Good {
     quantity: number;
     /**
      * 商品类别
+     * 1生活用品、2电子产品、3食品
      */
     type: number;
 }
 
-/**
- * 购物车
- */
+
 export interface Cart {
     customerId: number;
     goods: GoodStatus[];
@@ -61,4 +64,22 @@ export interface GoodStatus {
     isValid: boolean;
     merchantId: number;
     quantity: number;
+    /**
+     * 0在购物车、1已下单、2已完成
+     */
+    state: number;
+}
+
+export interface Order {
+    customerId: number;
+    goodStatus: GoodStatus[];
+    /**
+     * 下单时间
+     */
+    payTime: string;
+    sumPrice: number;
+    /**
+     * 0均未完成、1部分完成、2全部完成
+     */
+    sumState: string;
 }

@@ -3,83 +3,76 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   ShoppingOutlined,
+  ShopTwoTone,
   UserOutlined,
 } from '@ant-design/icons';
-import { Button, ConfigProvider, Layout, Menu, theme } from 'antd';
+import { Button, Divider, Layout, Menu } from 'antd';
+import { colorConfig } from './AppCss';
+import { Routes, useLocation, useNavigate } from 'react-router';
+import { Route } from 'react-router';
+import User from './components/User';
+import Shop from './components/Shop';
 
 const { Header, Sider, Content } = Layout;
 
 const App: React.FC = () => {
 
   const [collapsed, setCollapsed] = useState(false);
-  const [isDark, setIsDark] = useState(false)
-  const lightTheme = {
-    token: {
-      colorPrimary: '#1890ff',
-      bodyBg: '#f5f5f5',
-      colorBgContainer: '#ffffff',
-      siderBg: '#ffffff'
-    },
-  };
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const darkTheme = {
-    token: {
-      colorPrimary: '#177ddc',
-      bodyBg: '#000000',
-      colorBgContainer: '#141414',
-      colorText: 'rgba(255, 255, 255, 0.85)',
-      siderBg: '#000000'
-    },
-  };
   return (
-    <ConfigProvider theme={isDark ? darkTheme : lightTheme}>
-      <Layout className='h-full'>
-
-        <Sider style={{ background: 'siderBg' }} trigger={null} collapsible collapsed={collapsed}>
-          <div className="demo-logo-vertical" />
-          <p className='text-2xl '>Online-Shopping</p>
-          <Menu
-            mode="inline"
-            defaultSelectedKeys={['2']}
-            items={[
-              {
-                key: '1',
-                icon: <UserOutlined />,
-                label: '我的',
-              },
-              {
-                key: '2',
-                icon: <ShoppingOutlined />,
-                label: '商品',
-              }
-            ]}
-          />
-        </Sider>
-        <Layout>
-          <Header style={{ padding: 0 }}>
-            <Button
-              type="text"
-              icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
-              onClick={() => setCollapsed(!collapsed)}
-              style={{
-                fontSize: '16px',
-                width: 64,
-                height: 64,
-              }}
-            />
-          </Header>
-          <Content
+    <Layout className='h-full'>
+      <Sider style={{ background: colorConfig.background }} trigger={null} collapsible collapsed={collapsed}>
+        <div className='text-2xl  h-[64px] leading-[64px] text-center'>
+          <ShopTwoTone />
+          {collapsed ? '' : ' 在线商城'}
+        </div>
+        <Divider style={{ marginTop: 0, marginBottom: 4 }} />
+        <Menu
+          mode="inline"
+          selectedKeys={[location.pathname]}
+          onClick={({ key }) => navigate(String(key))}
+          items={[
+            {
+              key: '/private',
+              icon: <UserOutlined />,
+              label: '我的',
+            },
+            {
+              key: '/',
+              icon: <ShoppingOutlined />,
+              label: '商品',
+            }
+          ]}
+        />
+      </Sider>
+      <Layout>
+        <Header style={{ padding: 0, background: colorConfig.background }}>
+          <Button
+            type="text"
+            icon={collapsed ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+            onClick={() => setCollapsed(!collapsed)}
             style={{
-              margin: '24px 16px',
-              padding: 24,
-              minHeight: 280
+              fontSize: '16px',
+              width: 64,
+              height: 64,
             }}
-          >
-            Content
-          </Content>
-        </Layout>
+          />
+        </Header>
+        <Content
+          style={{
+            margin: '24px 16px',
+            padding: 24,
+          }}
+        >
+          <Routes>
+            <Route path='/private' element={<User />}></Route>
+            <Route path='/' element={<Shop />}></Route>
+          </Routes>
+        </Content>
       </Layout>
-    </ConfigProvider>
+    </Layout>
 
   );
 };

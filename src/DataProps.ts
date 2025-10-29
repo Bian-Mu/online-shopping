@@ -34,6 +34,7 @@ export interface Good {
     merchantId: number;
     price: number;
     quantity: number;
+    volume: number;  //成交量
     /**
      * 商品类别
      * 1生活用品、2电子产品、3食品

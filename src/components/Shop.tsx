@@ -4,11 +4,20 @@ import Meta from "antd/es/card/Meta"
 import {
     SearchOutlined
 } from '@ant-design/icons';
+import { useNavigate } from "react-router";
+import type { Good } from "../DataProps";
 
 const Shop: React.FC = () => {
 
     //http请求获取所有goods
     const goodsList = fakeGoods
+
+    const navigate = useNavigate()
+
+    const cardOnClick = (good: Good) => {
+        navigate(`details/${good.goodId}`)
+    }
+
 
     return (
         <div className="h-[calc(100vh-64px)]">
@@ -20,7 +29,7 @@ const Shop: React.FC = () => {
                 {goodsList.map((good) => {
                     return (
                         <div className="h-[320px] w-[250px]">
-                            <Card cover={<img src={good.goodPics[0]} style={{ width: 250, height: 250 }} />}>
+                            <Card onClick={() => cardOnClick(good)} cover={<img src={good.goodPics[0]} style={{ width: 250, height: 250 }} />}>
                                 <Meta className="text-center" title={good.goodName + " ￥" + good.price} description={"剩余" + good.quantity + "件 " + good.goodIntro.slice(0, 7) + "..."} />
                             </Card>
                         </div>

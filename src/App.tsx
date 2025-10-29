@@ -12,6 +12,7 @@ import { Routes, useLocation, useNavigate } from 'react-router';
 import { Route } from 'react-router';
 import User from './components/User';
 import Shop from './components/Shop';
+import Details from './components/Details';
 
 const { Header, Sider, Content } = Layout;
 
@@ -64,6 +65,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path='/private' element={<User />}></Route>
             <Route path='/' element={<Shop />}></Route>
+            <Route path='/details/:goodId' element={<Details />}></Route>
           </Routes>
         </Content>
       </Layout>

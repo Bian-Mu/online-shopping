@@ -1,3 +1,4 @@
 export const colorConfig = {
-    background: "white"
+    background: "white",
+    border: "gray"
 }

@@ -1,0 +1,16 @@
+[
+    {
+        "password": "123456",
+        "role": 0,
+        "userId": 12345678900,
+        "userName": "seller",
+        "address": "上海市浦东新区张江高科技园区"
+    },
+    {
+        "password": "123456",
+        "role": 1,
+        "userId": 12345678999,
+        "userName": "bm",
+        "address": "上海市浦东新区张江高科技园区"
+    }
+]

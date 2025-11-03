@@ -10,7 +10,7 @@ import { Button, Divider, Layout, Menu } from 'antd';
 import { colorConfig } from './AppCss';
 import { Routes, useLocation, useNavigate } from 'react-router';
 import { Route } from 'react-router';
-import User from './components/User';
+import UserPage from './components/UserPage';
 import Shop from './components/Shop';
 import Details from './components/Details';
 
@@ -63,7 +63,7 @@ const App: React.FC = () => {
         </Header>
         <Content>
           <Routes>
-            <Route path='/private' element={<User />}></Route>
+            <Route path='/private' element={<UserPage />}></Route>
             <Route path='/' element={<Shop />}></Route>
             <Route path='/details/:goodId' element={<Details />}></Route>
           </Routes>

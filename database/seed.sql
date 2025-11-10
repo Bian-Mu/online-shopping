@@ -33,25 +33,25 @@ INSERT INTO `users` (`role`, `userId`, `userName`, `password`, `address`) VALUES
 -- ============================================
 INSERT INTO `goods` (`type`, `goodId`, `merchantId`, `isSelling`, `quantity`, `volume`, `price`, `goodName`, `goodIntro`, `goodPics`) VALUES
 -- 生活用品 (type=1)
-(1, 'G001', 1001, 1, 50, 0, 89.90, '不锈钢保温杯', '高品质不锈钢保温杯，保温保冷效果出色，便携设计适合日常使用', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN013e0j4X1JyvywarAXo_%21%212220488811098.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN016nmUeP1kmYpb1ifI6_%21%212218045944726.jpg"]'),
-(1, 'G004', 1001, 0, 0, 0, 25.00, '纯棉毛巾', '舒适棉质毛巾，吸水性好，柔软亲肤', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN017fu1Gu21eB7KKIuxz_%21%214611686018427384449-0-item_pic.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01Az3jZO1mzxV3hJpc5_%21%210-saturn_solar.jpg"]'),
-(1, 'G007', 1001, 1, 60, 0, 35.00, '塑料收纳盒', '多功能收纳盒，整理杂物，节省空间', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01CktGgb1XF2uAvAOB4_%21%211723512893.jpg"]'),
-(1, 'G010', 1001, 0, 0, 0, 18.00, '玻璃杯', '玻璃水杯，透明美观，耐热防爆', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01GIyRcf1CvXjeCsq3n_%21%21400420143.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01IdMcf91csV6TOWvSP_%21%212206463603656.jpg"]'),
-(1, 'G013', 1001, 1, 20, 0, 128.00, '陶瓷餐具', '陶瓷餐具套装，精美花纹，耐用易清洗', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01J0GHC31isr7MYCk4n_%21%214611686018427384197-0-item_pic.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01J50Jwb1QtcgvPskEt_%21%211855372034.jpg"]'),
+(1, 'G001', 1001, 1, 50, 0, 89.90, '车厘子树苗', '正宗车厘子树苗大樱桃树苗果树果苗嫁接矮化盆栽水果树南方北种植', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN013e0j4X1JyvywarAXo_%21%212220488811098.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN013e0j4X1JyvywarAXo_%21%212220488811098.jpg"]'),
+(3, 'G004', 1001, 0, 0, 0, 25.00, '麦富迪猫条', '麦富迪猫条100支20支亲嘴鱼羊奶湿粮包猫零食猫咪补水主食猫罐头', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN017fu1Gu21eB7KKIuxz_%21%214611686018427384449-0-item_pic.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN017fu1Gu21eB7KKIuxz_%21%214611686018427384449-0-item_pic.jpg"]'),
+(1, 'G007', 1001, 1, 60, 0, 35.00, '洁柔纸巾', '洁柔纸巾可湿水抽纸3层无香餐巾面巾纸卫生纸整箱家用实惠装厕纸', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01CktGgb1XF2uAvAOB4_%21%211723512893.jpg"]'),
+(1, 'G010', 1001, 0, 0, 0, 18.00, '西芹秧苗', '寿光皇后西芹秧苗正宗根芹苗红芹白芹种子苗穴盘育苗带土发货四季', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01GIyRcf1CvXjeCsq3n_%21%21400420143.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01GIyRcf1CvXjeCsq3n_%21%21400420143.jpg"]'),
+(3, 'G013', 1001, 1, 20, 0, 128.00, '大桂圆干', '正宗莆田特级大桂圆干福建特产闽南妈祖伴手礼品龙眼干旅游送礼', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01J0GHC31isr7MYCk4n_%21%214611686018427384197-0-item_pic.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01J0GHC31isr7MYCk4n_%21%214611686018427384197-0-item_pic.jpg"]'),
 
 -- 电子产品 (type=2)
-(2, 'G002', 1002, 1, 25, 0, 2999.00, '智能手机', '最新款智能手机，搭载高性能处理器和超清摄像头', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01QqWjad2A15pHqefUI_%21%214611686018427387118-0-saturn_solar.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01UGQoOO2DdVwO9LZFM_%21%214611686018427381992-0-item_pic.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01UhdBKB2LvqaRxiBJp_%21%212211983339755.png"]'),
-(2, 'G005', 1002, 1, 30, 0, 399.00, '蓝牙耳机', '无线蓝牙耳机，降噪效果好，续航时间长', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01nqLHHC1hs6r7sLOl8_%21%212220063214332.jpg"]'),
-(2, 'G008', 1002, 1, 15, 0, 4599.00, '笔记本电脑', '轻薄便携笔记本电脑，适合办公学习使用', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01oDdJKx1flZxyk1CL1_%21%214611686018427386751-0-item_pic.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01t6mE6b243UFCIASHP~crop%2C0%2C147%2C1152%2C1152~_%21%212218799617335.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01y2ulwX1VnHI8YO838_%21%214611686018427382665-0-item_pic.jpg"]'),
-(2, 'G011', 1002, 1, 40, 0, 899.00, '智能手表', '智能手表，健康监测，运动记录', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsIMG_7605.JPEG"]'),
-(2, 'G014', 1002, 1, 18, 0, 1999.00, '平板电脑', '平板电脑，大屏体验，娱乐办公两相宜', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01GYQcIc1eTQfYQOaZj_%21%212217779713872.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01MPSSmy1jBdMHAuHA7_%21%212220214574510.jpg"]'),
+(3, 'G002', 1002, 1, 25, 0, 2999.00, '黄豆酱', '海天金字黄豆酱450g袋装豆瓣酱炒菜拌饭拌面酱大葱蘸酱家用酱料', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01UGQoOO2DdVwO9LZFM_%21%214611686018427381992-0-item_pic.jpg", "http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01UGQoOO2DdVwO9LZFM_%21%214611686018427381992-0-item_pic.jpg"]'),
+(2, 'G005', 1002, 1, 30, 0, 399.00, '美图秀秀svip', '美图秀秀svip会员7天1天3天美图秀秀粉钻vip一天电脑手机网页版', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01nqLHHC1hs6r7sLOl8_%21%212220063214332.jpg"]'),
+(2, 'G008', 1002, 1, 15, 0, 4599.00, '抖币充值', '1000钻石抖币充值秒到账抖币冲值音抖充币dy抖音充值dou斗抖', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN01oDdJKx1flZxyk1CL1_%21%214611686018427386751-0-item_pic.jpg"]'),
+(2, 'G011', 1002, 1, 40, 0, 899.00, '随车充', '新能源汽车随车充电放电一体枪便携智能二合一通用比亚迪排插放电', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsIMG_7605.JPEG"]'),
+(1, 'G014', 1002, 1, 18, 0, 1999.00, '眼镜鼻垫', '眼镜鼻垫超软海绵鼻托贴片减压防压痕防脱落防滑鼻梁支架眼睛配件', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01GYQcIc1eTQfYQOaZj_%21%212217779713872.jpg"]'),
 
 -- 食品 (type=3)
-(3, 'G003', 1003, 1, 100, 0, 68.00, '精品咖啡豆', '新鲜烘焙的咖啡豆，香气浓郁，口感醇厚', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01P60uTG1z7XecmxGuG_%21%212211867686667.jpg"]'),
-(3, 'G006', 1003, 1, 80, 0, 45.00, '手工巧克力', '进口巧克力，丝滑口感，多种口味选择', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01T7FumB2Dcb8hYujZy_%21%214611686018427380374-2-item_pic.png", "http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01Td187V22YVpZBrB6q_%21%214611686018427386364-2-item_pic.png"]'),
-(3, 'G009', 1003, 1, 120, 0, 32.00, '有机燕麦', '有机燕麦片，营养丰富，健康早餐选择', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01XLfA691pn5QRJuixk_%21%214611686018427387404-2-item_pic.png"]'),
-(3, 'G012', 1003, 1, 45, 0, 15.00, '新鲜面包', '新鲜烘焙面包，松软可口，当日制作', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01YJNs8a28G5Wd34YPZ_%21%212213047957904.jpg"]'),
-(3, 'G015', 1003, 1, 65, 0, 75.00, '纯天然蜂蜜', '天然蜂蜜，纯正无添加，营养健康', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01crbOGW1XwYXLQj926_%21%212214591132988.jpg"]');
+(1, 'G003', 1003, 1, 100, 0, 68.00, '小学数学画图法', '2025年新版小学数学画图法 妙解小学数学应用题带视频讲解 二年级三年级四五六排队问题植树问题计算题思维训练数学母题大全人教版', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01MPSSmy1jBdMHAuHA7_%21%212220214574510.jpg"]'),
+(2, 'G006', 1003, 1, 80, 0, 20.00, '青枫卡', '青枫卡20元卡密自动发货仅限自用 青枫卡充值20元', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01T7FumB2Dcb8hYujZy_%21%214611686018427380374-2-item_pic.png"]'),
+(1, 'G009', 1003, 1, 120, 0, 198.90, '胶原蛋白发光面膜', 'RuiLa Feier胶原蛋白发光面膜提拉紧致补水保湿滋润薄涂', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01XLfA691pn5QRJuixk_%21%214611686018427387404-2-item_pic.png"]'),
+(3, 'G012', 1003, 1, 45, 0, 24.40, '收纳箱', '安琴天山棉麻收纳箱布艺装衣物大容量专用百纳箱可视窗衣柜整理盒', '["http://t5hz6jh5i.hd-bkt.clouddn.com/goodsO1CN01crbOGW1XwYXLQj926_%21%212214591132988.jpg"]'),
+(2, 'G015', 1003, 1, 65, 0, 75.00, '华为手写笔mpencil三代', '华为手写笔mpencil三代华为平板matepad11.5s/pro/air原装电容笔', '["http://t5hz6jh5i.hd-bkt.clouddn.com/O1CN016nmUeP1kmYpb1ifI6_%21%212218045944726.jpg"]');
 
 -- ============================================
 -- 4. 插入购物车数据 (cart)

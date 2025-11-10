@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Input, Button, Card, Tabs, type TabsProps } from 'antd';
-import { PhoneOutlined, LockOutlined, HomeOutlined, UserAddOutlined } from '@ant-design/icons';
+import { PhoneOutlined, LockOutlined, HomeOutlined, UserAddOutlined, UserOutlined } from '@ant-design/icons';
 
 import fakeUsers from "../fakeData/users.json"
 
@@ -43,7 +43,7 @@ const Login: React.FC<{ setUser: Function }> = ({ setUser }) => {
 
                 <Form
                     form={form}
-                    name="login_register"
+                    name="login_or_register"
                     onFinish={onFinish}
                     initialValues={{ remember: true }}
                 >
@@ -67,6 +67,11 @@ const Login: React.FC<{ setUser: Function }> = ({ setUser }) => {
                     {activeTab === 'register' && (
                         <>
                             <Form.Item
+                                name="userName"
+                            >
+                                <Input prefix={<UserOutlined />} placeholder="昵称" />
+                            </Form.Item>
+                            <Form.Item
                                 name="address"
                                 rules={[{ required: true, message: '请输入您的地址!' }]}
                             >
@@ -76,7 +81,7 @@ const Login: React.FC<{ setUser: Function }> = ({ setUser }) => {
                             <Form.Item
                                 name="invitationCode"
                             >
-                                <Input prefix={<UserAddOutlined />} placeholder="邀请码（选填）" />
+                                <Input prefix={<UserAddOutlined />} placeholder="邀请码" />
                             </Form.Item>
                         </>
                     )}

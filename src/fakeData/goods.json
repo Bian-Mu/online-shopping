@@ -8,7 +8,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1001,
+        "merchantId": 12345678900,
         "price": 89.9,
         "quantity": 50,
         "volume": 0,
@@ -24,7 +24,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1002,
+        "merchantId": 12345678900,
         "price": 2999,
         "quantity": 25,
         "volume": 0,
@@ -38,7 +38,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1003,
+        "merchantId": 12345678900,
         "price": 68,
         "quantity": 100,
         "volume": 0,
@@ -53,7 +53,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": false,
-        "merchantId": 1001,
+        "merchantId": 12345678900,
         "price": 25,
         "quantity": 0,
         "volume": 0,
@@ -67,7 +67,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1002,
+        "merchantId": 12345678900,
         "price": 399,
         "quantity": 30,
         "volume": 0,
@@ -82,7 +82,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1003,
+        "merchantId": 12345678900,
         "price": 45,
         "quantity": 80,
         "volume": 0,
@@ -96,7 +96,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1001,
+        "merchantId": 12345678900,
         "price": 35,
         "quantity": 60,
         "volume": 0,
@@ -112,7 +112,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1002,
+        "merchantId": 12345678900,
         "price": 4599,
         "quantity": 15,
         "volume": 0,
@@ -126,7 +126,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1003,
+        "merchantId": 12345678900,
         "price": 32,
         "quantity": 120,
         "volume": 0,
@@ -141,7 +141,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": false,
-        "merchantId": 1001,
+        "merchantId": 12345678900,
         "price": 18,
         "quantity": 0,
         "volume": 0,
@@ -155,7 +155,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1002,
+        "merchantId": 12345678900,
         "price": 899,
         "quantity": 40,
         "volume": 0,
@@ -169,7 +169,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1003,
+        "merchantId": 12345678900,
         "price": 15,
         "quantity": 45,
         "volume": 0,
@@ -184,7 +184,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1001,
+        "merchantId": 12345678900,
         "price": 128,
         "quantity": 20,
         "volume": 0,
@@ -199,7 +199,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1002,
+        "merchantId": 12345678900,
         "price": 1999,
         "quantity": 18,
         "volume": 0,
@@ -213,7 +213,7 @@
             "../../public/avatar.jpg"
         ],
         "isSelling": true,
-        "merchantId": 1003,
+        "merchantId": 12345678900,
         "price": 75,
         "quantity": 65,
         "volume": 0,

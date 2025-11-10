@@ -47,7 +47,7 @@ const Shop: React.FC = () => {
                     onKeyUp={handleKeyPress} />
                 <SearchOutlined onClick={() => searchOnClick()} />
             </div>
-            <div id="goodsBox" className="h-[calc(100vh-145px)] grid grid-cols-5 gap-10 overflow-y-scroll overflow-x-hidden px-8 pt-4">
+            <div id="goodsBox" className="h-[calc(100vh-208px)] grid grid-cols-5 gap-10 overflow-y-scroll overflow-x-hidden px-8 pt-4">
                 {list.map((good) => {
                     return (
                         <div key={good.goodId} className="h-[320px] w-[250px]">

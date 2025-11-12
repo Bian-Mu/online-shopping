@@ -4,13 +4,10 @@ import Login from './Login';
 import { Button, Card } from 'antd';
 import MerchantItem from './merchant';
 import CustomerItem from './customer';
-import GoodForm from './merchant/goodForm';
 
 
 const UserPage: React.FC = () => {
     const [user, setUser] = useState<User | null>(null);
-    const [visible, setVisible] = useState<boolean>(false)
-    const [currentGoodId, setCurrentGoodId] = useState<string | null>(null)
 
 
     useEffect(() => {
@@ -27,10 +24,6 @@ const UserPage: React.FC = () => {
     }
 
 
-    const goodAddOrModifyClick = (goodId: string | null) => {
-        setCurrentGoodId(goodId)
-        setVisible(true)
-    }
 
     const InfoCard: React.FC<{ user: User }> = ({ user }) => {
         return (
@@ -43,7 +36,6 @@ const UserPage: React.FC = () => {
                     <Button className='mx-2' onClick={LoginOutClick}>
                         退出登陆
                     </Button>
-                    {!user.role ? <Button className='mx-2' onClick={() => goodAddOrModifyClick(null)}>添加商品</Button> : ''}
                 </div>
             </div>
 
@@ -58,15 +50,12 @@ const UserPage: React.FC = () => {
 
     return (
         <>
-            {visible ? <div className='fixed w-full h-full z-1000 bg-black opacity-50'>
-                <GoodForm goodId={currentGoodId} cancelOverlay={() => setVisible(false)} />
-            </div> : ''}
-            <div className='w-full h-full grid grid-cols-10 gap-4'>
-                <div className='col-span-3'>
+            <div className='w-full h-full grid grid-cols-10'>
+                <div className='col-span-3 pr-3 border-r-2 border-gray-400'>
                     <InfoCard user={user} />
                 </div>
-                <div className='col-span-7'>
-                    {user.role ? <CustomerItem userId={user.userId} /> : <MerchantItem userId={user.userId} clickFunction={goodAddOrModifyClick} />}
+                <div className='col-span-7 '>
+                    {user.role ? <CustomerItem userId={user.userId} /> : <MerchantItem userId={user.userId} />}
                 </div>
             </div>
         </>

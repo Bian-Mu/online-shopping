@@ -48,7 +48,7 @@ const Login: React.FC<{ setUser: Function }> = ({ setUser }) => {
                     initialValues={{ remember: true }}
                 >
                     <Form.Item
-                        name="phone"
+                        name="userId"
                         rules={[
                             { required: true, message: '请输入您的手机号!' },
                             { pattern: /^1[3456789]\d{9}$/, message: '请输入有效的手机号!' }
